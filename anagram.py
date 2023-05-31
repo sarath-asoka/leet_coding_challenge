@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
 
-from typing import List
-
 class Solution:
     def isAnagram(self, s: str, t: str) -> bool:
         return sorted(s) == sorted(t)           
