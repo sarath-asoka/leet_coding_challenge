@@ -4,18 +4,17 @@ from typing import List
 class Solution:
     def isValidSudoku(self, board: List[List[str]]) -> bool:
         res = []
+        r = []
         for i in range(len(board)):
             for j in range(len(board)):
                 element = board[i][j]
                 if element != '.':
-                    res += [(i, element), (element, j), (i // 3, j // 3, element)]
-        return len(res) == len(set(res))
-
+                    print(element)
                     
 
 
         
-board = [["5","3",".",".","7",".",".",".","."]
+board = [["8","3",".",".","7",".",".",".","."]
 ,["6",".",".","1","9","5",".",".","."]
 ,[".","9","8",".",".",".",".","6","."]
 ,["8",".",".",".","6",".",".",".","3"]
